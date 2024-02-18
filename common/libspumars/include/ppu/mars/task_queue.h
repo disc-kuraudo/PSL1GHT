@@ -6,9 +6,6 @@
 
 struct mars_context;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task_queue
@@ -113,8 +110,5 @@ int mars_task_queue_peek(uint64_t queue_ea, void *data);
  */
 int mars_task_queue_try_peek(uint64_t queue_ea, void *data);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

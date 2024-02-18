@@ -37,9 +37,6 @@
 #ifdef _VECTORMATH_DEBUG
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
 
 #ifndef _VECTORMATH_AOS_C_TYPES_H
 #define _VECTORMATH_AOS_C_TYPES_H
@@ -1940,9 +1937,6 @@ static inline void vmathT3Prints( const VmathTransform3 *tfrm, const char *name 
 
 #endif
 
-#ifdef __cplusplus
-}
-#endif /* __cplusplus */
 
 #include "vec_aos.h"
 #include "quat_aos.h"

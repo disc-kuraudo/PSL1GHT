@@ -5,9 +5,6 @@
 #include <ppu-types.h>
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 #define CELL_HTTP_UTIL_URI_FLAG_FULL_URI         (0x00000000)
@@ -101,8 +98,5 @@ s32 httpUtilParseStatusLine(httpStatusLine *resp,const char *str,u32 len,void *p
 s32 httpUtilParseHeader(httpHeader *header,const char *str,u32 len,void *pool,u32 size,u32 *required,u32 *parsedLength);
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

@@ -7,9 +7,6 @@
 
 #define FONT_LIBRARY_TYPE_NONE 				0
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef void* (*fontMallocCallback)(void *object,u32 size);
 typedef void  (*fontFreeCallback)(void *object,void *ptr);
@@ -259,8 +256,5 @@ s32 fontCloseFont(font *cf);
 s32 fontEndLibrary(const fontLibrary *lib);
 s32 fontEnd();
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

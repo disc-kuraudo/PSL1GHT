@@ -12,9 +12,6 @@
 #define POLLWRBAND	0x0100
 #define POLLOUT		POLLWRNORM
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef unsigned int nfds_t;
 
@@ -26,8 +23,5 @@ struct pollfd {
 
 int poll(struct pollfd fds[],nfds_t nfds,int timeout);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

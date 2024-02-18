@@ -3,9 +3,6 @@
 
 #include <mars/task_types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task_signal
@@ -66,8 +63,5 @@ int mars_task_signal_wait(void);
  */
 int mars_task_signal_try_wait(void);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

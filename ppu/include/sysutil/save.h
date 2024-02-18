@@ -49,9 +49,6 @@
 #define SYS_SAVE_RETURN_ERROR_FAILED		(SYS_SAVE_RETURN_ERROR | 7)
 #define SYS_SAVE_RETURN_ERROR_ALREADY_IN_USE	(SYS_SAVE_RETURN_ERROR | 8)
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef enum {
   SYS_SAVE_SORT_TYPE_TIMESTAMP = 0,
@@ -334,8 +331,5 @@ s32 sysSaveAutoSave2 (s32 version,
 
 s32 sysSaveDelete2(sys_mem_container_t container);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

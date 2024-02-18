@@ -20,9 +20,6 @@
 #define CAMERA_ERRO_FATAL				0x8014080f
 #define CAMERA_ERRO_MUTEX				0x80140810
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef enum _camera_attrib
 {
@@ -183,8 +180,5 @@ s32 cameraCtrlExtensionUnit(s32 num,u8 req,u16 wval,u16 wlen,u8* data);
 s32 cameraGetExtensionUnit(s32 num,u16 wval,u16 wlen,u8* data);
 s32 cameraSetExtensionUnit(s32 num,u16 wval,u16 wlen,u8* data);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

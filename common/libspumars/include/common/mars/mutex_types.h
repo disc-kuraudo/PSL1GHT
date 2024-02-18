@@ -9,9 +9,6 @@
 #define MARS_MUTEX_LOCKED				0x1
 #define MARS_MUTEX_UNLOCKED				0x0
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 struct mars_mutex_status
 {
@@ -27,8 +24,5 @@ struct mars_mutex
 	uint8_t pad[124];
 } __attribute__((aligned(MARS_MUTEX_ALIGN)));
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

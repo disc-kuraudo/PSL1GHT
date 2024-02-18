@@ -103,9 +103,6 @@
 #define net_errno			(*netErrnoLoc())
 #define net_h_errno			(*netHErrnoLoc())
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 struct net_msghdr
 {
@@ -177,8 +174,5 @@ s32 netSetSockOpt(s32 socket,s32 level,s32 option_name,const void *option_value,
 struct net_hostent* netGetHostByAddr(const char *addr,socklen_t len,s32 type);
 struct net_hostent* netGetHostByName(const char *name);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

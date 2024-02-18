@@ -120,9 +120,6 @@ Typically call this macro outside function declarations.
 #define SYS_OBJECT_EVENT_FLAG              (0x98UL)
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 typedef struct _sys_process_param
@@ -198,8 +195,5 @@ LV2_SYSCALL sysProcessGetPpuGuid(void)
 }
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

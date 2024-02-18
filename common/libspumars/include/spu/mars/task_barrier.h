@@ -5,9 +5,6 @@
 
 #include <mars/task_barrier_types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task_barrier
@@ -110,8 +107,5 @@ int mars_task_barrier_wait(uint64_t barrier_ea);
  */
 int mars_task_barrier_try_wait(uint64_t barrier_ea);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

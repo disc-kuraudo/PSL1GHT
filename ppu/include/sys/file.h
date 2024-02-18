@@ -8,9 +8,6 @@
 #include <ppu-lv2.h>
 #include <lv2/sysfs.h>
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 LV2_SYSCALL sysLv2FsOpen(const char *path,s32 oflags,s32 *fd,u32 mode,const void *arg,u64 argsize)
 {
@@ -132,8 +129,5 @@ LV2_SYSCALL sysLv2FsLink(const char *oldpath,const char *newpath)
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

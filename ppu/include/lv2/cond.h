@@ -8,9 +8,6 @@
 #include <ppu-types.h>
 #include <lv2/mutex.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Lightweight condition variable data structure. */
 typedef struct sys_lwcond
@@ -72,8 +69,5 @@ s32 sysLwCondSignalTo(sys_lwcond_t *lwcond,sys_ppu_thread_t thr);
 */
 s32 sysLwCondSignalAll(sys_lwcond_t *lwcond);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

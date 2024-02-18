@@ -12,9 +12,6 @@
 /*! \brief Default sharing policy for semaphore attributes. */
 #define SYS_SEM_ATTR_PSHARED			0x0200
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 /*! \brief Semaphore sttributes data structure. */
 typedef struct sys_sem_attr
@@ -101,8 +98,5 @@ LV2_SYSCALL sysSemGetValue(sys_sem_t sem,s32 *count)
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

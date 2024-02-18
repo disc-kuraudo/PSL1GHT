@@ -8,9 +8,6 @@
 #include <ppu-lv2.h>
 #include <lv2/systime.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 LV2_INLINE u64 sysGetTimebaseFrequency()
 {
@@ -42,8 +39,5 @@ LV2_SYSCALL sysUsleep(u32 useconds)
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

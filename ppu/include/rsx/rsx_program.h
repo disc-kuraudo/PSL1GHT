@@ -28,9 +28,6 @@
 #define PARAM_SAMPLERRECT		18
 #define PARAM_UNKNOWN			0xff
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Vertex program data structure.
 
@@ -244,8 +241,5 @@ rsxProgramAttrib* rsxFragmentProgramGetAttrib(const rsxFragmentProgram *fp,const
 */
 rsxConstOffsetTable* rsxFragmentProgramGetConstOffsetTable(const rsxFragmentProgram *fp,u32 table_off);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

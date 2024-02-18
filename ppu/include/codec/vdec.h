@@ -44,80 +44,68 @@
 #define VDEC_MPEG2_ARI_DAR_16_9			3
 #define VDEC_MPEG2_ARI_DAR_2P21_1		4
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
-typedef struct _vdec_type
-{
+typedef struct vdec_type {
 	u32 codec_type;
 	u32 profile_level;
-} vdecType;
+} vdec_type;
 
 
-typedef struct _vdec_attr
-{
+typedef struct vdec_attr {
 	u32 mem_size;
 	u8 cmd_depth;
 	u32 ver_major;
 	u32 ver_minor;
-} vdecAttr;
+} vdec_attr;
 
-typedef struct _vdec_config
-{
+typedef struct vdec_config {
 	u32 mem_addr;
 	u32 mem_size;
 	u32 ppu_thread_prio;
 	u32 ppu_thread_stack_size;
 	u32 spu_thread_prio;
 	u32 num_spus;
-} vdecConfig;
+} vdec_config;
 
-typedef struct _vdec_closure
-{
+typedef struct vdec_closure {
   u32 fn;
   u32 arg;
-} vdecClosure;
+} vdec_closure;
 
-typedef struct _vdec_ts 
-{
+typedef struct vdec_ts {
 	u32 low,hi;
-} vdecTS;
+} vdec_ts;
 
-typedef struct _vdec_au
-{
+typedef struct vdec_au {
 	u32 packet_addr;
 	u32 packet_size;
-	vdecTS pts;
-	vdecTS dts;
+	vdec_TS pts;
+	vdec_TS dts;
 	u64 userdata;
 	u64 reserved;
-} vdecAU;
+} vdec_au;
 
-typedef struct _vdec_picture
-{
+typedef struct vdec_picture {
 	u32 codec_type;
 	u32 picture_addr;
 	u32 picture_size;
 	u8 access_units;
-	vdecTS pts[2];
-	vdecTS dts[2];
+	vdec_TS pts[2];
+	vdec_TS dts[2];
 	u64 userdata[2];
 	u32 status;
 	u32 attr;
 	u32 codec_specific_addr;
-} vdecPicture;
+} vdec_picture;
 
 
-typedef struct _vdec_picture_format 
-{
+typedef struct vdec_picture_format {
 	u32 format_type;
 	u32 color_matrix;
 	u8 alpha;
-} vdecPictureFormat;
+} vdec_picture_format;
 
-typedef struct _vdec_mpeg2_info
-{
+typedef struct vdec_mpeg2_info {
 	u16 width;
 	u16 height;
 	u8  aspect_ratio;
@@ -147,10 +135,9 @@ typedef struct _vdec_mpeg2_info
 	u32 headerPresentFlags;
 	u32 headerRetentionFlags;
 	bool mpeg1Flag;
-} vdecMPEG2Info;
+} vdec_mpeg2_info;
 
-typedef struct _vdec_h264_info 
-{
+typedef struct vdec_h264_info {
 	u16 width;
 	u16 height;
 	u8  picture_type[2];
@@ -175,22 +162,19 @@ typedef struct _vdec_h264_info
 	bool low_delay_hrd_flag;
 	bool entropy_coding_mode_flag;
 	u16 nalUnitPresentFlags;
-} vdecH264Info;
+} vdec_h264_info;
 
-typedef u32 (*vdecCallback)(u32 handle,u32 msgtype,u32 msgdata,u32 arg);
+typedef u32 (*vdec_callback)(u32 handle, u32 msgtype, u32 msgdata, u32 arg);
 
-s32 vdecQueryAttr(const vdecType *type,vdecAttr *attr);
-s32 vdecOpen(const vdecType *type,const vdecConfig *config,const vdecClosure *c,u32 *handleptr);
-s32 vdecClose(u32 handle);
-s32 vdecStartSequence(u32 handle);
-s32 vdecEndSequence(u32 handle);
-s32 vdecDecodeAu(u32 handle,s32 mode,const vdecAU *auInfo);
-s32 vdecGetPicture(u32 handle,const vdecPictureFormat *format,void *buffer);
-s32 vdecGetPicItem(u32 handle,u32 *pic_item_addr_p);
+s32 vdec_query_attr(const vdec_Type *type,vdec_Attr *attr);
+s32 vdec_open(const vdec_Type *type,const vdec_Config *config,const vdec_Closure *c,u32 *handleptr);
+s32 vdec_close(u32 handle);
+s32 vdec_start_sequence(u32 handle);
+s32 vdec_end_sequence(u32 handle);
+s32 vdec_decode_au(u32 handle,s32 mode,const vdec_AU *auInfo);
+s32 vdec_get_picture(u32 handle,const vdec_PictureFormat *format,void *buffer);
+s32 vdec_get_pic_item(u32 handle,u32 *pic_item_addr_p);
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

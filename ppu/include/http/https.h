@@ -6,9 +6,6 @@
 #include <ssl/ssl.h>
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 /*
@@ -44,9 +41,6 @@ s32 httpClientSetSslClientCertificate(httpClientId cid,const httpsData *cert,con
 s32 httpClientSetSslCallback(httpClientId cid,httpsSslCallback cb,void *arg);
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif
 

@@ -65,9 +65,6 @@
 #define VIDEO_PORT_SCART                              0x85
 #define VIDEO_PORT_DSUB                               0x86
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Video resolution.
 */
@@ -255,8 +252,5 @@ s32 videoGetConvertCursorColorInfo(u8 *rgbOutputRange);
 s32 videoRegisterCallback(u32 slot, videoCallback cbVideo, void *userData);
 s32 videoUnregisterCallback(u32 slot);
 
-#ifdef __cplusplus
-    }
-#endif
 
 #endif

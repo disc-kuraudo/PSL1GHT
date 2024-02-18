@@ -6,9 +6,6 @@
 
 struct mars_context;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task_barrier
@@ -71,8 +68,5 @@ int mars_task_barrier_initialize(uint64_t barrier_ea,
  */
 int mars_task_barrier_destroy(uint64_t barrier_ea);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

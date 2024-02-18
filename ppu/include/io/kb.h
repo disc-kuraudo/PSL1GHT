@@ -6,9 +6,6 @@
 
 #include <ppu-types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 #define MAX_KEYBOARDS	127
 #define MAX_KB_PORT_NUM	7
@@ -317,7 +314,4 @@ s32 ioKbGetConfiguration(const u32 kb_no, KbConfig* kb_config);
  */ 
 s32 ioKbClearBuf(const u32 kb_no);
 
-#ifdef __cplusplus
-	}
-#endif
 

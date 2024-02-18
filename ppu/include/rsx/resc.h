@@ -70,9 +70,6 @@
 #define RESC_DISPLAY_HSYNC                       1
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 /*
@@ -207,9 +204,6 @@ void rescSetFlipHandler(void (*handler)(u32 head));
 s32  rescGcmSurface2RescSrc(gcmSurface *surface, rescSrc *src);
 s32  rescVideoResolution2RescBufferMode(u32 resolutionId, u32 *bufferMode);
 
-#ifdef __cplusplus
-    }
-#endif
 
 #endif
 

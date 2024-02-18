@@ -3,9 +3,6 @@
 
 #include <ppu-types.h>
 #include <spurs/types.h>
-#ifdef __cplusplus
-	extern "C" {
-#endif
 	
 		
 
@@ -27,8 +24,5 @@ s32 spursAttributeSetSpuThreadGroupType(SpursAttribute* attr, int type);
 s32 spursAttributeEnableSpuPrintfIfAvailable(SpursAttribute* attr);
 s32	spursAttributeSetMemoryContainerForSpuThread(SpursAttribute* attr,sys_mem_container_t container);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

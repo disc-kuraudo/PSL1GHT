@@ -216,9 +216,6 @@ to the Cell Broadband Engine documentation.
 #define SPU_THREAD_GET_PROBLEM_STORAGE(spu,reg) \
 	(SPU_THREAD_GET_BASE_OFFSET(spu) + SPU_PROBLEM_OFFSET + (reg))
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 //! A structure containing the arguments passed to the SPU main function.
 typedef struct _sys_spu_thread_arg
@@ -973,8 +970,5 @@ static inline u32 sysSpuThreadReadProblemStorage(sys_raw_spu_t spu,u32 reg)
 	return __read32(SPU_THREAD_GET_PROBLEM_STORAGE(spu,reg));
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

@@ -9,9 +9,6 @@
 #define MARS_TASK_CONTEXT_SAVE_SIZE_MAX		0x3c600
 #define MARS_TASK_NAME_LEN_MAX				21
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 struct mars_task_id {
@@ -29,8 +26,5 @@ struct mars_task_args {
 	} type;
 };
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

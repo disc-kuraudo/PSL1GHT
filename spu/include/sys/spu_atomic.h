@@ -5,9 +5,6 @@
 #include <spu_mfcio.h>
 #include <spu_intrinsics.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 uint32_t spu_atomic_nop32(uint32_t *ls, uint64_t ea);
 uint64_t spu_atomic_nop64(uint64_t *ls, uint64_t ea);
@@ -78,8 +75,5 @@ static inline int spu_atomic_store_conditional64(uint64_t *ls, uint64_t ea, uint
 	return mfc_read_atomic_status();
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

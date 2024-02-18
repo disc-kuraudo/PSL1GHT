@@ -85,9 +85,6 @@
 #define SYSUTIL_LANG_TURKISH            19  // Turkish 
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Pointer to callback function.
 
@@ -144,8 +141,5 @@ s32 sysUtilRegisterCallback(s32 slot,sysutilCallback cb,void *usrdata);
 s32 sysUtilGetSystemParamInt(s32 id,s32 *value);
 s32 sysUtilGetSystemParamString(s32 id,char *buf,u32 bufsize);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

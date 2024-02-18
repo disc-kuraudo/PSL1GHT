@@ -20,14 +20,8 @@
 #define BUTTON_R2				0x0002
 #define BUTTON_L2				0x0001
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 u32 pad_read();
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

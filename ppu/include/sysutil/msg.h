@@ -6,9 +6,6 @@
 #define MSG_PROGRESSBAR_INDEX0			0
 #define MSG_PROGRESSBAR_INDEX1			1
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef enum
 {
@@ -47,8 +44,5 @@ s32 msgDialogProgressBarSetMsg(u32 index,const char *msg);
 s32 msgDialogProgressBarReset(u32 index);
 s32 msgDialogProgressBarInc(u32 index,u32 percent);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

@@ -5,9 +5,6 @@
 
 #include <mars/task_queue_types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task_queue
@@ -547,8 +544,5 @@ int mars_task_queue_try_peek(uint64_t queue_ea, void *data);
  */
 int mars_task_queue_try_peek_begin(uint64_t queue_ea, void *data, uint32_t tag);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

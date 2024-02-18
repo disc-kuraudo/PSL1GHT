@@ -92,9 +92,6 @@ struct linger
 
 #define SOCKET_FD_MASK 0x40000000
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 int accept(int socket, struct sockaddr* address, socklen_t* address_len);
 int bind(int socket, const struct sockaddr* address, socklen_t address_len);
@@ -114,8 +111,5 @@ int shutdown(int socket, int how);
 int socket(int domain, int type, int protocol);
 int socketpair(int domain, int type, int protocol, int socket_vector[2]);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

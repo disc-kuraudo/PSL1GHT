@@ -75,9 +75,6 @@
 
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /* Types */
 
@@ -725,8 +722,5 @@ vector double fmodd2(vector double, vector double);
 vector double remainderd2(vector double, vector double);
 #endif 
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif

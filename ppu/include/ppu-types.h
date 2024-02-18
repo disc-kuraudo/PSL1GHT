@@ -6,9 +6,6 @@
 #include <stdlib.h>
 #include <sys/types.h>
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 typedef uint8_t		u8;
 typedef uint16_t 	u16;
@@ -127,9 +124,6 @@ typedef union _ieee64
 #define STACK_ALIGN(type, name, cnt, alignment)		u8 _al__##name[((sizeof(type)*(cnt)) + (alignment) + (((sizeof(type)*(cnt))%(alignment)) > 0 ? ((alignment) - ((sizeof(type)*(cnt))%(alignment))) : 0))]; \
 													type *name = (type*)(((u64)(_al__##name)) + ((alignment) - (((u64)(_al__##name))&((alignment)-1))))
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif
 

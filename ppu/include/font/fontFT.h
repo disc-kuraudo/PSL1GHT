@@ -7,9 +7,6 @@
 
 #define FONT_LIBRARY_TYPE_FREETYPE  			2
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef struct _font_library_configFT
 {
@@ -36,8 +33,5 @@ static inline void fontLibraryConfigFT_initialize(fontLibraryConfigFT *config)
 
 s32 fontInitLibraryFreeType(fontLibraryConfigFT *config,const fontLibrary **lib);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

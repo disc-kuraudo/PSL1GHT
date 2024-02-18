@@ -58,9 +58,6 @@
 #define PAD_ERROR_ALREADY_INITIALIZED           0x80121103
 #define PAD_ERROR_NOT_INITIALIZED               0x80121104
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Pad info data structure (old format). */
 typedef struct _pad_info
@@ -470,8 +467,5 @@ s32 ioPadPeriphGetData(u32 port, padPeriphData* periphData);
 */
 s32 ioPadSetPortSetting(u32 port, u32 setting);
 
-#ifdef __cplusplus
-    }
-#endif
 
 #endif

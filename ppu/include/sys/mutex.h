@@ -28,9 +28,6 @@
 /*! \brief Mutex is not adaptive. */
 #define SYS_MUTEX_ATTR_NOT_ADAPTIVE		0x2000
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 /*! \brief Mutex attributes data structure.*/
 typedef struct sys_mutex_attr
@@ -134,8 +131,5 @@ LV2_SYSCALL sysMutexUnlock(sys_mutex_t mutex)
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

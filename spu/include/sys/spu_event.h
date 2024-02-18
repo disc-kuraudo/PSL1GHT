@@ -18,9 +18,6 @@
 
 #define EVENT_PRINTF_PORT		1U
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Send an SPU thread user event.
 
@@ -78,8 +75,5 @@ in case of error.
 */
 int spu_thread_tryreceive_event(uint32_t spuq,uint32_t *data0,uint32_t *data1,uint32_t *data2);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

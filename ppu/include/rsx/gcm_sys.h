@@ -708,9 +708,6 @@
 	 ((outputA) << GCM_TEXTURE_REMAP_TYPE_A_SHIFT) | ((outputR) << GCM_TEXTURE_REMAP_TYPE_R_SHIFT) | \
 	 ((outputG) << GCM_TEXTURE_REMAP_TYPE_G_SHIFT) | ((outputB) << GCM_TEXTURE_REMAP_TYPE_B_SHIFT))
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 struct _gcmCtxData;
 typedef s32 (*gcmContextCallback)(struct _gcmCtxData *context,u32 count);
@@ -1353,8 +1350,5 @@ s32 gcmDumpGraphicsError();
 
 void gcmSetUserCommand(void (*handler)(const u32 cause));
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

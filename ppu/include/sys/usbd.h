@@ -3,9 +3,6 @@
 
 #include <ppu-lv2.h>
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 LV2_SYSCALL sysUsbdInitialize(u32 *initVal)
 {
@@ -41,8 +38,5 @@ LV2_SYSCALL sysUsbdRegisterExtraLdd(u32 handle, void *lddOps, u16 strLen, u16 ve
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

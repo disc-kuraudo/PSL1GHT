@@ -16,14 +16,8 @@ struct mars_jq_module_syscalls
     struct mars_jq_context* (*get_jobQ)(void);
 };
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 extern const struct mars_jq_module_syscalls *mars_jq_module_syscalls;
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif /* __MARS_JQ_MODULE_H__ */

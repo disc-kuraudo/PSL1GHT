@@ -8,9 +8,6 @@
 
 #define MOUSE_MAX_DATA_LIST		(8)
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 typedef struct _mouse_info
@@ -75,8 +72,5 @@ s32 ioMouseInfoTabletMode(u32 port, mouseInfoTablet* infoTablet);
 s32 ioMouseSetTabletMode(u32 port, u32 mode);
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

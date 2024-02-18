@@ -61,9 +61,6 @@
 #define OSK_LAYOUTMODE_VERTICAL_ALIGN_CENTER 	0x00002000
 #define OSK_LAYOUTMODE_VERTICAL_ALIGN_TOP 	0x00004000
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief On-screen keyboard initial layout values. */
 typedef enum
@@ -362,8 +359,5 @@ s32 oskSetInitialKeyLayout(oskKeyLayout layout);
 */
 s32 oskSetLayoutMode (s32 mode);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

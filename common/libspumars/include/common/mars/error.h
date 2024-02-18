@@ -1,9 +1,6 @@
 #ifndef __MARS_ERROR_H__
 #define __MARS_ERROR_H__
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 enum {
 	MARS_SUCCESS = 0,	/**< successful with no errors */
@@ -18,8 +15,5 @@ enum {
 	MARS_ERROR_BUSY		/**< operation returned due to being busy */
 };
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

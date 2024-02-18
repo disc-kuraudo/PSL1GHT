@@ -6,9 +6,6 @@
 
 struct mars_context;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_workload_queue
@@ -323,8 +320,5 @@ int mars_workload_queue_try_wait(struct mars_context *mars,
 int mars_workload_queue_signal_send(struct mars_context *mars,
 				    uint16_t id);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

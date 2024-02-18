@@ -12,9 +12,6 @@
  */
 struct mars_context;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_context
@@ -88,8 +85,5 @@ int mars_context_destroy(struct mars_context *mars);
  */
 uint32_t mars_context_get_num_mpus(struct mars_context *mars);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

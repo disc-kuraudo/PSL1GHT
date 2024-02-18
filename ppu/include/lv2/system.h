@@ -7,9 +7,6 @@
 #define RANDOM_NUMBER_MAX_SIZE                      (4096)
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 /*
@@ -21,8 +18,5 @@ extern "C" {
 u32 sysGetRandomNumber(void *addr, u64 size);
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

@@ -3,9 +3,6 @@
 
 #include <ppu-types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef enum
 {
@@ -20,8 +17,5 @@ typedef void (*sysDiscInsertCallback)(u32 discType,char *title);
 s32 sysDiscRegisterDiscChangeCallback(sysDiscEjectCallback cbEject,sysDiscInsertCallback cbInsert);
 s32 sysDiscUnregisterDiscChangeCallback();
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

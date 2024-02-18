@@ -15,9 +15,6 @@
 #define PNGDEC_ERROR_SPU_ERROR				0x80611209
 #define PNGDEC_ERROR_CB_PARAM				0x8061120a
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef struct _pngdec_stream_info pngDecStreamInfo;
 typedef struct _pngdec_stream_param pngDecStreamParam;
@@ -277,8 +274,5 @@ s32 pngDecExtDecodeData(s32 handle,s32 subhandle,u8 *data,const pngDecDataCtrlPa
 s32 pngLoadFromFile(const char *filename,pngData *out);
 s32 pngLoadFromBuffer(const void *buffer,u32 size,pngData *out);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

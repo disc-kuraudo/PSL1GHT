@@ -11,9 +11,6 @@
 #include <mars/task_signal.h>
 #include <mars/task_types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task
@@ -308,8 +305,5 @@ const struct mars_task_id *mars_task_get_id(void);
  */
 const char *mars_task_get_name(void);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

@@ -5,9 +5,6 @@
 
 #include <mars/task_event_flag_types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task_event_flag
@@ -151,8 +148,5 @@ int mars_task_event_flag_try_wait(uint64_t event_flag_ea,
 				  uint32_t mask, uint8_t mask_mode,
 				  uint32_t *bits);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

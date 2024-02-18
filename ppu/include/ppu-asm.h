@@ -52,9 +52,6 @@
 	asm volatile("1: mftb %[current_tb]; cmpwi 7,%[current_tb],0; beq- 7,1b" : [current_tb] "=r"(tb) : : "cr7"); \
 	tb;})
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
 
 static inline unsigned short bswap16(unsigned short val)
 {
@@ -74,8 +71,5 @@ static inline unsigned long long bswap64(unsigned long long val)
 	return __ldbrx(&tmp);
 }
 
-#ifdef __cplusplus
-	}
-#endif /* __cplusplus */
 
 #endif

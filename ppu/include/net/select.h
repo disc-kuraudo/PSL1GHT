@@ -6,9 +6,6 @@
 #include <sys/time.h>
 #include <sys/types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef unsigned int _net_fd_mask;
 
@@ -22,8 +19,5 @@ typedef struct _net_fd_set {
 int select(int, fd_set*, fd_set*, fd_set*, struct timeval*);
 int pselect(int, fd_set*, fd_set*, fd_set*, const struct timespec*, const sigset_t*);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

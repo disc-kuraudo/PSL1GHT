@@ -8,9 +8,6 @@
 #include <ppu-lv2.h>
 #include <net/socket.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 LV2_SYSCALL sysNetAccept(int socket,const struct sockaddr *addr,socklen_t *addr_len)
 {
@@ -66,8 +63,5 @@ LV2_SYSCALL sysNetClose(int socket)
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

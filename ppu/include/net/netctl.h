@@ -170,9 +170,6 @@
 #define NET_CTL_ERROR_DHCP_LEASE_TIME                 (0x80130504) /* lease expired */
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 struct net_ctl_ether_addr {
     u8 data[NET_CTL_ETHER_ADDR_LEN];
@@ -245,8 +242,5 @@ s32 netCtlNetStartDialogLoadAsync(struct net_ctl_net_start_dialog_param *param);
 s32 netCtlNetStartDialogAbortAsync(void);
 s32 netCtlNetStartDialogUnloadAsync(struct net_ctl_net_start_dialog_result *result);
 */
-#ifdef __cplusplus
-    }
-#endif
 
 #endif

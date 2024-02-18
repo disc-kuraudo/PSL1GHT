@@ -6,9 +6,6 @@
 #define MARS_CALLBACK_ARGS_SIZE					48
 #define MARS_CALLBACK_ARGS_ALIGN				16
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 struct mars_callback_args
 {
@@ -23,8 +20,5 @@ struct mars_callback_args
 
 typedef int (*mars_callback)(const struct mars_callback_args *in, struct mars_callback_args *out);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

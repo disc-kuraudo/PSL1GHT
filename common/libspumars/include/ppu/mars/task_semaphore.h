@@ -6,9 +6,6 @@
 
 struct mars_context;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task_semaphore
@@ -53,8 +50,5 @@ int mars_task_semaphore_create(struct mars_context *mars,
  */
 int mars_task_semaphore_destroy(uint64_t semaphore_ea);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

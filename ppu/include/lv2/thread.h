@@ -7,9 +7,6 @@
 
 #include <ppu-types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Terminate the running PPU thread.
 \param ret_val Thread return value.
@@ -22,8 +19,5 @@ void sysThreadExit(u64 ret_val);
 */
 s32 sysThreadGetId(sys_ppu_thread_t *threadid);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

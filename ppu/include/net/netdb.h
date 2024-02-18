@@ -43,9 +43,6 @@
 
 extern int h_errno;
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 struct hostent
 {
@@ -83,8 +80,5 @@ struct hostent* gethostbyaddr(const char *addr,socklen_t len,int tpye);
 struct hostent* gethostbyname(const char *name);
 struct servent *getservbyport(int port, const char *proto);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

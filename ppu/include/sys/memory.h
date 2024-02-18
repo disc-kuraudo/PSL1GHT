@@ -24,9 +24,6 @@
 #define SYS_MEMORY_PROT_READ_ONLY			0x0000000000080000ULL
 #define SYS_MEMORY_PROT_READ_WRITE			0x0000000000040000ULL
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 LV2_SYSCALL sysMemoryAllocate(size_t size,u64 flags,sys_mem_addr_t *alloc_addr)
 {
@@ -76,8 +73,5 @@ LV2_SYSCALL sysMemAllocateFromContainer(size_t size,sys_mem_container_t containe
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

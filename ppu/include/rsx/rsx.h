@@ -82,9 +82,6 @@ a <code>usleep(200)</code> call should be fine.
 #include <rsx/rsx_program.h>
 #include <rsx/commands.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Pointer to default command buffer context */
 extern gcmContextData *gGcmContext ATTRIBUTE_PRXPTR;
@@ -140,8 +137,5 @@ static inline u32 rsxAlign(u32 alignment, u32 value)
 	return (alignment==0 ? value : (value==0 ? 0 : (((u32)((value - 1)/alignment) + 1)*alignment)));
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

@@ -78,9 +78,6 @@
 #define CELL_HTTP_MAX_PASSWORD                           (256)
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 /*
@@ -284,9 +281,6 @@ s32 httpTransactionGetSslId(httpTransId tid,httpSslId *id);
 /* transaction callback */
 s32 httpClientSetTransactionStateCallback(httpClientId cid,httpTransactionStateCallback cb,void *arg);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif
 

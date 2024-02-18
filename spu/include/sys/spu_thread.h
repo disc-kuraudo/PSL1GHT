@@ -17,9 +17,6 @@
 #define SPU_THREAD_Sig_Notify_1					0x5400C
 #define SPU_THREAD_Sig_Notify_2					0x5C00C
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Terminate the running SPU thread group.
  \param status
@@ -38,8 +35,5 @@ void spu_thread_group_yield(void);
 */
 void spu_thread_exit(int status);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

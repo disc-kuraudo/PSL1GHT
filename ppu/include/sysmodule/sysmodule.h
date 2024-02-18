@@ -3,9 +3,6 @@
 
 #include <ppu-types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /* constants */
 #define SYSMODULE_OK                             0x00
@@ -98,8 +95,5 @@ s32 sysModuleUnload(sysModuleId id);
 s32 sysModuleIsLoaded(sysModuleId id);
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

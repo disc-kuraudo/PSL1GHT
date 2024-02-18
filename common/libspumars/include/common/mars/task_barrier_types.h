@@ -1,9 +1,6 @@
 #ifndef __MARS_TASK_BARRIER_TYPES_H__
 #define __MARS_TASK_BARRIER_TYPES_H__
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \file
@@ -26,8 +23,5 @@ extern "C" {
  */
 struct mars_task_barrier;
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

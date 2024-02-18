@@ -65,9 +65,6 @@ do { \
 				   ((tag) < 32), "ls=%#x,ea=%#llx,tag=%u\n", ls,ea,tag)
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef mfc_list_element_t spu_dma_list_element;
 
@@ -384,8 +381,5 @@ static inline uint32_t spu_dma_wait_tag_status_all(uint32_t tagmask)
 
 #define spu_dma_wait_atomic_status() mfc_read_atomic_status()
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

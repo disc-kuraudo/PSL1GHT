@@ -31,9 +31,6 @@
 #define SYS_GAME_THEMEINSTALL_BUFSIZE_MIN        (4096)  /* Size of the minimum buffer Theme Installation */
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*
  * enumerations
@@ -177,9 +174,6 @@ s32 sysGameDeleteGameData(const char *dirName);
 s32 sysGameRegisterDiscChangeCallback(sysGameDiscEjectCallback cbEject, sysGameDiscInsertCallback cbInsert);
 s32 sysGameUnregisterDiscChangeCallback(void);
 
-#ifdef __cplusplus
-    }
-#endif
 
 #endif /* __LV2_SYSUTIL_GAME_H__ */
 

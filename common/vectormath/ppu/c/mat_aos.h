@@ -30,9 +30,6 @@
 #ifndef _VECTORMATH_MAT_AOS_C_H
 #define _VECTORMATH_MAT_AOS_C_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
 
 /*-----------------------------------------------------------------------------
  * Constants
@@ -1826,8 +1823,5 @@ static inline void vmathV3CrossMatrixMul( VmathMatrix3 *result, const VmathVecto
     vmathM3MakeFromCols( result, &tmpV3_0, &tmpV3_1, &tmpV3_2 );
 }
 
-#ifdef __cplusplus
-}
-#endif /* __cplusplus */
 
 #endif

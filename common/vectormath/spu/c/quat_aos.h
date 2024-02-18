@@ -29,9 +29,6 @@
 
 #ifndef _VECTORMATH_QUAT_AOS_C_H
 #define _VECTORMATH_QUAT_AOS_C_H
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
 
 /*-----------------------------------------------------------------------------
  * Definitions
@@ -364,8 +361,5 @@ static inline void vmathQPrints( const VmathQuat *quat, const char *name )
 
 #endif
 
-#ifdef __cplusplus
-}
-#endif /* __cplusplus */
 
 #endif

@@ -2,9 +2,6 @@
 #define __TYPES_H__
 
 #include <ppu-types.h>
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 
 #define SPURS_ALIGN	128
@@ -54,8 +51,5 @@ typedef struct SpursAttribute {
 	unsigned char	skip[SPURS_ATTRIBUTE_SIZE];
 } __attribute__((aligned(SPURS_ATTRIBUTE_ALIGN))) SpursAttribute;
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

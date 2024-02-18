@@ -33,9 +33,6 @@
 #include <simdmath.h>
 #include <stddef.h>
 #include "vec_types.h"
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
 
 /*-----------------------------------------------------------------------------
  * Constants
@@ -1118,8 +1115,5 @@ static inline void vmathP3Prints( const VmathPoint3 *pnt, const char *name )
 
 #endif
 
-#ifdef __cplusplus
-}
-#endif /* __cplusplus */
 
 #endif

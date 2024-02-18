@@ -27,9 +27,6 @@
 /*! \brief number of SPU inbound MB entries */
 #define SYS_DBG_SPU_NUM_MB			4
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Possible statuses for PPU threads. */
 typedef enum
@@ -231,8 +228,5 @@ s32 sysDbgReadPPUThreadContext(sys_ppu_thread_t id,sys_dbg_ppu_thread_context_t 
 s32 sysDbgUnregisterPPUExceptionHandler();
 //s32 sysDbgGetLwMutexInformation();
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

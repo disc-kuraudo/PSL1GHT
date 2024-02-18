@@ -10,9 +10,6 @@
 /*! \brief Pshared attribute for condition variables. */
 #define SYS_COND_ATTR_PSHARED			0x0200
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 /*! \brief Condition variable attributes data structure */
 typedef struct sys_cond_attr
@@ -92,8 +89,5 @@ LV2_SYSCALL sysCondBroadcast(sys_cond_t cond)
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

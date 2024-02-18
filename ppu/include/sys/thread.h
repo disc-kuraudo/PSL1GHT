@@ -14,9 +14,6 @@
 /*! \brief The thread is triggered by an intterupt */
 #define THREAD_INTERRUPT		2
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 /*! \brief PPU thread stack data structure. */
 typedef struct _sys_ppu_thread_stack_t {
@@ -140,8 +137,5 @@ LV2_SYSCALL sysThreadGetStackInformation(sys_ppu_thread_stack_t *info)
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

@@ -24,9 +24,6 @@
 #define SPU_IMAGE_PROTECT					0x00
 #define SPU_IMAGE_DIRECT					0x01
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 //! SPU segment data structure.
 typedef struct _sys_spu_segment
@@ -156,8 +153,5 @@ s32 sysSpuPrintfFinalize();
 
 s32 sysSpuImageOpenELF(sysSpuImage* image, const char* path);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

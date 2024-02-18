@@ -10,9 +10,6 @@ These are functions to enqueue commands into the RSX's command buffer.
 #include <rsx/gcm_sys.h>
 #include <rsx/rsx_program.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 #define RSX_INTERNAL	0
 
@@ -34,8 +31,5 @@ extern "C" {
 
 #undef RSX_INTERNAL
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

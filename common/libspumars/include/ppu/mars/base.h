@@ -5,9 +5,6 @@
 #include <malloc.h>
 #include <ppu-types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_base
@@ -254,8 +251,5 @@ static inline uint64_t mars_ptr_to_ea(const void *ptr)
  */
 uint32_t mars_get_ticks(void);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

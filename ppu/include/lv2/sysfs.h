@@ -19,9 +19,6 @@
 #define SYS_FS_IO_BUFFER_PAGE_SIZE_64KB 2
 #define SYS_FS_IO_BUFFER_PAGE_SIZE_1MB  4
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 typedef struct _sys_fs_stat
 {
@@ -97,8 +94,5 @@ s32 sysFsSetIoBuffer(s32 fd, size_t bufferSizeLimit, s32 pageType, sys_mem_conta
 s32 sysFsSetDefaultContainer(sys_mem_container_t container, size_t totalLimit);
 s32 sysFsSetIoBufferFromDefaultContainer(s32 fd, size_t bufferSizeLimit, s32 pageType);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

@@ -12,9 +12,6 @@
 #define SYS_HW_THREAD_INVALID			0xFFFFFFFFU
 #define SYS_INTERRUPT_TAG_ID_INVALID	0xFFFFFFFFU
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 LV2_SYSCALL sysInterruptTagCreate(sys_interrupt_tag_t *intrTag,sys_irqoutlet_id_t irq,sys_hw_thread_t hwThread)
 {
@@ -45,8 +42,5 @@ LV2_INLINE void sysInterruptThreadEOI(void)
 	lv2syscall0(88);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

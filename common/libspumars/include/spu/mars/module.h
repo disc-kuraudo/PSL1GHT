@@ -7,9 +7,6 @@
 #include <mars/mutex_types.h>
 #include <mars/workload_types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_workload_module
@@ -401,8 +398,5 @@ int mars_module_dma_put(const void *ls, uint64_t ea, uint32_t size,
  */
 int mars_module_dma_wait(uint32_t tag);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

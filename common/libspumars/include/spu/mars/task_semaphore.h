@@ -5,9 +5,6 @@
 
 #include <mars/task_semaphore_types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task_semaphore
@@ -51,8 +48,5 @@ int mars_task_semaphore_acquire(uint64_t semaphore_ea);
  */
 int mars_task_semaphore_release(uint64_t semaphore_ea);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

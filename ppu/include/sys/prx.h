@@ -9,9 +9,6 @@
 #include <lv2/prx.h>
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 #define SYS_PRX_RESIDENT                         0
@@ -120,9 +117,6 @@ typedef struct sys_prx_module_info_t {
 } sysPrxModuleInfo;
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif
 

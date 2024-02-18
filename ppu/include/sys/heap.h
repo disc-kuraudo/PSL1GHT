@@ -13,9 +13,6 @@
 #define HEAP_BLOCK_ALLOC_BONUS		(sizeof(uintptr_t))
 #define HEAP_BLOCK_HEADER_SIZE		(2*sizeof(uintptr_t))
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef struct _heap_block_t heap_block;
 typedef struct _heap_cntrl_t heap_cntrl;
@@ -49,8 +46,5 @@ void* heapAllocate(heap_cntrl *theheap, uintptr_t size);
 void* heapAllocateAligned(heap_cntrl *theheap, uintptr_t size, uintptr_t alignment);
 bool heapFree(heap_cntrl *theheap, void *ptr);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

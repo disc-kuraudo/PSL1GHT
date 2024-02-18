@@ -7,9 +7,6 @@
 
 #include <ppu-types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Initialize the RSX heap.
 \return 0 if no error, nonzero otherwise.
@@ -36,8 +33,5 @@ The buffer must have been allocated with \ref rsxMalloc or \ref rsxMemalign.
 */
 void rsxFree(void *ptr);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

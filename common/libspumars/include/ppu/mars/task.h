@@ -13,9 +13,6 @@
 #include <mars/task_signal.h>
 #include <mars/task_types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_task
@@ -125,8 +122,5 @@ int mars_task_try_wait(const struct mars_task_id *id, int32_t *exit_code);
  */
 uint32_t mars_task_get_ticks(void);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

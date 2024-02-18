@@ -23,9 +23,6 @@
 #define SYS_LWMUTEX_ATTR_NOT_RECURSIVE	0x0020
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Lightweight mutex data structure. */
 typedef struct sys_lwmutex
@@ -94,8 +91,5 @@ s32 sysLwMutexTryLock(sys_lwmutex_t *mutex);
 */
 s32 sysLwMutexUnlock(sys_lwmutex_t *mutex);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

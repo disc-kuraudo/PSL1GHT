@@ -4,9 +4,6 @@
 #include <ppu-types.h>
 #include <mars/mutex_types.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * \ingroup group_mars_mutex
@@ -123,8 +120,5 @@ int mars_mutex_lock_get(uint64_t mutex_ea, struct mars_mutex *mutex);
  */
 int mars_mutex_unlock_put(uint64_t mutex_ea, struct mars_mutex *mutex);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

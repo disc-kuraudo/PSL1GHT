@@ -157,9 +157,6 @@
 #define SSL_LOAD_CERT_SECOM_RCA2          (0x0200000000000000ULL)
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
 
 
 typedef void* sslCert;
@@ -188,8 +185,5 @@ int sslCertGetNameEntryInfo(const sslCert cert, uint32_t entryNum, const char **
 int sslCertGetMd5Fingerprint(const sslCert cert, const uint8_t *buf, uint32_t *plen);
 
 
-#ifdef __cplusplus
-	}
-#endif /* __cplusplus */
 
 #endif /* __SSL_H__ */

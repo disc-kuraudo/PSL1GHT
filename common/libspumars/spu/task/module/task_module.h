@@ -48,9 +48,6 @@ struct mars_task_module_syscalls {
 	int	(*dma_wait)(uint32_t tag);
 };
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 extern const struct mars_task_module_syscalls *mars_task_module_syscalls;
 
@@ -172,8 +169,5 @@ static inline int mars_dma_wait(uint32_t tag)
 	return (*mars_task_module_syscalls->dma_wait)(tag);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

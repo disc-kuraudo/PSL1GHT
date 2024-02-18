@@ -69,9 +69,6 @@ channel.
 /*! \brief 32 blocks are allocated in the audio buffer */
 #define AUDIO_BLOCK_32					32
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /*! \brief Audio port parameter data structure. */
 typedef struct _audio_port_param
@@ -195,8 +192,5 @@ s32 audioSetNotifyEventQueue(sys_ipc_key_t queueKey);
 */
 s32 audioRemoveNotifyEventQueue(sys_ipc_key_t queueKey);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

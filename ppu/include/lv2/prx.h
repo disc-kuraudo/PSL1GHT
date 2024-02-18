@@ -9,9 +9,6 @@
 #include <sys/prx.h>
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 
 extern s32 sysPrxVersion;
@@ -29,9 +26,6 @@ s32 sysPrxGetModuleInfo(sysPrxId id, sysPrxFlags flags, sysPrxModuleInfo *info);
 sysPrxId sysPrxGetModuleIdByName(const char *name, sysPrxFlags flags, sysPrxGetModuleIdByNameOption *opt);
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif
 

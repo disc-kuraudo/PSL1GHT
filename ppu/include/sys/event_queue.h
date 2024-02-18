@@ -31,9 +31,6 @@
 /*! \brief Force destruction of event queue. */
 #define SYS_EVENT_QUEUE_FORCE_DESTROY			0x01
 
-#ifdef __cplusplus
-	extern "C" {
-#endif
 
 /*! \brief Data structure for create attributes for an event queue */
 typedef struct sys_event_queue_attr
@@ -185,8 +182,5 @@ LV2_SYSCALL sysEventPortDisconnect(sys_event_port_t portId)
 	return_to_user_prog(s32);
 }
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

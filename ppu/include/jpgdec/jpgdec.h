@@ -14,9 +14,6 @@
 #define JPGDEC_ERROR_SPU_UNSUPPORT			0x80611108
 #define JPGDEC_ERROR_CB_PARAM				0x80611109
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef struct _jpgdec_strm_info jpgDecStrmInfo;
 typedef struct _jpgdec_strm_param jpgDecStrmParam;
@@ -249,8 +246,5 @@ s32 jpgDecExtDecodeData(s32 handle,s32 subhandle,u8 *data,const jpgDecDataCtrlPa
 s32 jpgLoadFromFile(const char *filename,jpgData *out);
 s32 jpgLoadFromBuffer(const void *buffer,u32 size,jpgData *out);
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif

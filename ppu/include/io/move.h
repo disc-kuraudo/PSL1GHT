@@ -26,9 +26,6 @@
 #define GEM_INERTIAL_NEXT					2
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef enum
 {
@@ -221,8 +218,5 @@ s32 gemIsTrackableHue(u32 hue);
 s32 gemGetStatusFlags(u32 num, u64* flags);
 
 
-#ifdef __cplusplus
-	}
-#endif
 
 #endif
